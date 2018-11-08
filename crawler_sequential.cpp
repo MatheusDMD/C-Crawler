@@ -83,7 +83,7 @@ std::vector<itemRegexType> getItemInfoRegex(){
     std::tuple<std::string,std::string,std::regex>("name", ">", name_regex);
     std::vector<itemRegexType> info_regex = {
         itemRegexType("name",1, name_regex),
-        itemRegexType("description",1,description_regex),
+        // itemRegexType("description",1,description_regex),
         itemRegexType("photo_url", 2, photo_url_regex),
         itemRegexType("price", 1, price_regex),
         itemRegexType("installments_price", 1, installments_price_regex),
